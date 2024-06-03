@@ -1,0 +1,45 @@
+/*
+Theme Name: Hello Elementor Child
+Template: hello-elementor
+*/
+
+.site-footer .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+}
+
+.copyright {
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    color: #FFF;
+}
+
+.header-hero-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Example selectors for header and hero */
+.site-header {
+    background: none;
+    /* Remove existing background if any */
+}
+
+.hero-section {
+    background: none;
+    /* Remove existing background if any */
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+    height: auto;
+    padding: 20px;
+    margin: 0px;
+}

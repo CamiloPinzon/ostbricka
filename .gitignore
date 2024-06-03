@@ -104,6 +104,7 @@ $RECYCLE.BIN/
 
 # Example themes
 /themes/twenty*/
+/themes/hello-elementor/
 
 # Example plugin
 /plugins/hello.php
