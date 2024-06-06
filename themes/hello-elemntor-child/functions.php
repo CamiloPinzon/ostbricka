@@ -2,6 +2,7 @@
 require_once get_stylesheet_directory() . '/widgets/ostbricka-search-widget.php';
 require_once get_stylesheet_directory() . '/widgets/products-by-category-widget.php';
 require_once get_stylesheet_directory() . '/widgets/posts-widget.php';
+require_once get_stylesheet_directory() . '/widgets/custom-posts-widget.php';
 
 
 

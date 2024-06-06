@@ -39,18 +39,20 @@ class Products_By_Category_Widget extends WP_Widget
             $products = new WP_Query($query_args);
 
             if ($products->have_posts()) {
-                echo '<ul class="custom-product-list">';
+                echo '<div class="custom-product-list">';
                 while ($products->have_posts()) {
                     $products->the_post();
                     global $product;
-                    echo '<li>';
+                    echo '<div>';
                     echo '<a href="' . get_the_permalink() . '">';
+                    echo '<div class="custom-product-list-item">';
                     echo get_the_post_thumbnail($product->get_id(), 'thumbnail');
-                    echo '<span>' . get_the_title() . '</span>';
+                    echo '<div >' . get_the_title() . '</div>';
+                    echo '</div>';
                     echo '</a>';
-                    echo '</li>';
+                    echo '</div>';
                 }
-                echo '</ul>';
+                echo '</div>';
             } else {
                 echo '<p>' . __('No products found', 'text_domain') . '</p>';
             }
